@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './AdminPanel.css';
 
 function AdminPanel({ people, onAddPerson, onUpdatePerson, onDeletePerson, onLogout }) {
@@ -313,4 +312,5 @@ function AdminPanel({ people, onAddPerson, onUpdatePerson, onDeletePerson, onLog
 }
 
 export default AdminPanel;
+
 
