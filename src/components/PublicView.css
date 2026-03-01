@@ -1,0 +1,141 @@
+.public-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    min-height: calc(100vh - 200px);
+}
+
+.public-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.public-header h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    font-weight: 700;
+}
+
+.search-input {
+    padding: 0.75rem 1rem;
+    border: 2px solid #e0e6ed;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-width: 300px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.person-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.person-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.person-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.person-photo-placeholder {
+    font-size: 4rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.person-name {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+}
+
+.person-field {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    word-break: break-word;
+}
+
+.person-field span {
+    font-size: 1.1rem;
+    min-width: 20px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.empty-state h2 {
+    font-size: 1.8rem;
+    color: #666;
+    margin: 0 0 1rem 0;
+}
+
+.empty-state p {
+    color: #999;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f5f7fa;
+    border-radius: 8px;
+    color: #999;
+    font-size: 1.1rem;
+}

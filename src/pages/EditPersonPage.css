@@ -1,0 +1,4 @@
+/* Edit page uses same styling as form */
+@import '../components/PersonForm.css';
+
+/* Empty - inherits styles from form */
