@@ -31,13 +31,13 @@ function AppContent() {
   const handleAdminLogin = () => {
     setIsAdminLoggedIn(true);
     localStorage.setItem('adminLoggedIn', 'true');
-    navigate('/');
+    navigate("/login");
   };
 
   const handleAdminLogout = () => {
     setIsAdminLoggedIn(false);
     localStorage.removeItem('adminLoggedIn');
-    navigate('/');
+    navigate("/login");
   };
 
   const handleAddPerson = (person) => {
