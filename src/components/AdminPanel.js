@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './AdminPanel.css';
 
 function AdminPanel({ people, onAddPerson, onUpdatePerson, onDeletePerson, onLogout }) {
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('list');
     const [editingIndex, setEditingIndex] = useState(null);
     const [deleteConfirm, setDeleteConfirm] = useState(null);
@@ -312,5 +314,6 @@ function AdminPanel({ people, onAddPerson, onUpdatePerson, onDeletePerson, onLog
 }
 
 export default AdminPanel;
+
 
 
