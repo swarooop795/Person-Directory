@@ -23,6 +23,10 @@ function AppContent() {
     }
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem('people', JSON.stringify(people));
+  }, [people]);
+
   const savePeople = (list) => {
     setPeople(list);
     localStorage.setItem('people', JSON.stringify(list));
